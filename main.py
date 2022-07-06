@@ -39,7 +39,7 @@ def Dataset(ticker, start, end, days_list):
 df, features = Dataset(ticker='QQQ', start='01-01-2000', end='06-07-2022', days_list=[1,2,3,7,14])
 
 # We define the 'XGBoostTimeSeriesForecastingModel', which will save the trained model
-def XGBoostTimeSeriesForecastingModel (df, features, label, perc, n_estimators, learning_rate):
+def XGBoostTimeSeriesForecastingModel(df, features, label, perc, n_estimators, learning_rate):
 
   # We define the number threshold to split the 'train' and 'test' subsets
   n = int(len(df)*(1-perc))
