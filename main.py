@@ -37,7 +37,7 @@ def Dataset(ticker, start, end, days_list):
   return df, features
 
 # We obtain the dataset and the list of features for some given input variables, feel free to modify them
-df, features = Dataset(ticker='QQQ', start='01-01-2000', end='06-07-2022', days_list=[1,2,3,7,14])
+df, features = Dataset(ticker='AAPL', start='01-01-2000', end='06-07-2022', days_list=[1,2,3,7,14])
 
 # We define the 'XGBoostTimeSeriesForecastingModel', which will save the trained model
 def XGBoostTimeSeriesForecastingModel(df, features, label, perc, n_estimators, learning_rate):
