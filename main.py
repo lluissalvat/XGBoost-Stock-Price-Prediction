@@ -1,6 +1,7 @@
 # We import the relevant modules
 import pandas as pd
 import pandas_datareader.data 
+import sklearn
 import xgboost
 from xgboost import XGBRegressor
 
